@@ -2,8 +2,8 @@ package com.sajal.university.app.architecturecomponent
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel : ViewModel(){
-    var counter: Int = 0
+class MainViewModel(val initialValue : Int) : ViewModel(){
+    var counter: Int = initialValue
     fun increment(){
         counter++
     }
